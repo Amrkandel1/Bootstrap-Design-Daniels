@@ -1,0 +1,673 @@
+/*------------------ main-rules ------------------------*/
+:root{
+    --color-1:#111111;
+    --color-2:#999999;
+    --color-3:#748182;
+    --color-4:#1C1C1C;
+    --color-5:#fff;
+    --color-6:#F7F7F7;
+    --color-7:#343434;
+    --color-8:#888888;
+    --color-9:#5B5B5B;
+}
+::-webkit-scrollbar{
+    width: 17px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--color-8);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-4);
+    /* border-radius: 20px; */
+    box-shadow: 0px 0px 2px var(--color-3) inset;
+}
+/*------------------ main-rules ------------------------*/
+
+/*------------------ navbar-start ----------------------*/
+.nav-title{
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: 0.0625rem;
+}
+.navbar-nav .nav-link.active::before{
+    content: " ";
+    width: 75%;
+    left: 14%;      
+}
+.navbar-nav li a{
+    color: var(--color-1);
+    position: relative;
+}
+.navbar-nav li a::before{
+    content: " ";
+    position: absolute;
+    height: 0.125rem;
+    width: 0;
+    bottom: 0;
+    transition: all 0.5s;
+    background-color: var(--color-1);
+}
+/*------------------ navbar-end ------------------------*/
+
+/*------------------ home-page-start -------------------*/
+#home-page{
+    background-image: url(../imgs/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+}
+.layer-content{
+    font-family: 'Montserrat', sans-serif;
+}
+.layer-content h5{
+    font-size: 3.125rem;
+    font-weight: 800;
+}
+.layer-content h1{
+    font-size: 3.75rem;
+}
+.layer-content span{
+    font-weight: 200;
+}
+.layer-content p{
+    font-weight: 400;
+}
+.layer-content p::before{
+    content: " |";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+@keyframes typing {
+    1.54%{ content:" |"}
+    3.08%{ content:" L|"}
+    4.62%{ content:" La|"}
+    6.16%{ content:" Lar|"}
+    7.7%{ content:" Larr|"}
+    9.24%{ content:" Larry|"}
+    10.78%{ content:" Larry |"}
+    12.32%{ content:" Larry D|"}
+    13.86%{ content:" Larry Da|"}
+    15.4%{ content:" Larry Dan|"}
+    16.94%{ content:" Larry Dani|"}
+    18.48%{ content:" Larry Danie|"}
+    20.02%{ content:" Larry Daniel|"}
+    21.56%{ content:" Larry Daniels|"}
+    23.1%{ content:" Larry Daniels|"}
+    24.64%{ content:" Larry Daniels|"}
+    26.18%{ content:" Larry Daniel|"}
+    27.72%{ content:" Larry Danie|"}
+    29.26%{ content:" Larry Dani|"}
+    30.8%{ content:" Larry Da|"}
+    32.34%{ content:" Larry D|"}
+    33.88%{ content:" Larry|"}
+    35.42%{ content:" Larr|"}
+    36.96%{ content:" Lar|"}
+    38.5%{ content:" La|"}
+    40.04%{ content:" L|"}
+    41.58%{ content:" |"}
+    43.12%{ content:" D|"}
+    44.66%{ content:" De|"}
+    46.2%{ content:" Des|"}
+    47.74%{ content:" Desi|"}
+    49.28%{ content:" Desig|"}
+    50.82%{ content:" Design|"}
+    52.36%{ content:" Designe|"}
+    53.9%{ content:" Designer|"}
+    55.44%{ content:" Designer|"}
+    56.98%{ content:" Designer|"}
+    58.52%{ content:" Designe|"}
+    60.06%{ content:" Design|"}
+    61.6%{ content:" Desig|"}
+    63.14%{ content:" Desi|"}
+    64.68%{ content:" Des|"}
+    66.22%{ content:" De|"}
+    67.76%{ content:" D|"}
+    69.3%{ content:" |"}
+    70.84%{ content:" D|"}
+    72.38%{ content:" De|"}
+    73.92%{ content:" Dev|"}
+    75.46%{ content:" Deve|"}
+    77%{ content:" Devel|"}
+    78.54%{ content:" Develo|"}
+    80.08%{ content:" Develop|"}
+    81.62%{ content:" Develope|"}
+    83.16%{ content:" Developer|"}
+    84.7%{ content:" Developer|"}
+    86.24%{ content:" Developer|"}
+    87.78%{ content:" Develope|"}
+    89.32%{ content:" Develop|"}
+    90.86%{ content:" Develo|"}
+    92.4%{ content:" Devel|"}
+    93.94%{ content:" Deve|"}
+    95.487%{ content:" Dev|"}
+    97.02%{ content:" De|"}
+    98.563%{ content:" D|"}
+    100%{ content:" |"}
+    
+    
+}
+.icon1{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*------------------ home-page-end ---------------------*/
+
+/*------------------ aboutme-page-start ----------------*/
+.aboutme-page-img{
+    padding-left:1.875rem;
+    position: relative;
+}
+.aboutme-page-img::before{
+    content: " ";
+    position: absolute;
+    left: 0rem;
+    bottom: -1.875rem;
+    width: 80%;
+    height: 80%;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.aboutme-page-content{
+    font-family: 'Poppins', sans-serif;
+}
+.aboutme-page-content h3{
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+.aboutme-page-content > span{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--color-2);
+    letter-spacing: 0.125rem;  
+}
+.aboutme-page-content > p{
+    line-height: 1.5rem;
+    color: var(--color-3);
+    padding-right: 3.125rem;
+}
+.progress{
+    height: 1.5625rem;
+    box-shadow: 0.1875rem 0.125rem 0.375rem rgba(0, 0, 0, 0.3) inset;
+}
+.progress-bar{
+    border-top-right-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+    background-color: var(--color-4);
+}
+.aboutme-page-content-btn a{
+    text-decoration: none;
+    padding: 0.625rem 1.875rem;
+    border-radius: 0.3125rem;
+}
+.btn1{
+    background-color: var(--color-4);
+    border: 0.0625rem solid var(--color-4);
+    transition: all 0.5s;
+}
+.btn1:hover{
+    background-color: var(--color-5);
+    color: var(--color-4) !important;
+}
+.btn2{
+    border: 0.0625rem solid var(--color-4);
+    transition: all 0.5s;
+}
+.btn2:hover{
+    background-color: var(--color-4);
+    color: var(--color-5) !important;
+}
+/*------------------ aboutme-page-end ------------------*/
+
+/*------------------ Services-page-start ---------------*/
+#Services-page{
+    background-color: var(--color-6);
+}
+.Services-page-title{
+    margin-bottom: 3.125rem;   
+}
+.Services-page-title h3{
+    margin-top: 3.75rem;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+.Services-page-title h3::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1.25rem;
+    bottom: -0.4375rem;
+    z-index: -1;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+.Services-page-icons{
+    background-color: var(--color-6);
+    height: 4.375rem;
+    width: 4.375rem;
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+.Services-page-icons i{
+    color: var(--color-4);
+    transition: all 0.5s;
+}
+.inner{
+    background-color: var(--color-5);
+    border-radius: 0.3125rem;
+}
+.inner:hover .Services-page-icons{
+    background-color: var(--color-4);
+}
+.inner:hover .Services-page-icons i{
+    color: var(--color-5);
+}
+.inner h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.inner p{   
+    max-width: 20rem;
+    font-size: 0.875rem;
+    color: var(--color-3);
+    font-family: 'Poppins', sans-serif;
+}
+/*------------------ Services-page-end -----------------*/
+
+/*------------------ Portfolio-page-start --------------*/
+.Portfolio-page-title h3{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 900;
+    z-index: 2;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+.Portfolio-page-title h3::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: -0.4375rem;
+    width: 100%;
+    height: 1.25rem;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+.Portfolio-page-ul li button:hover{
+    color: var(--color-4);
+}
+.Portfolio-page-ul li button{
+    color: var(--color-4);
+    position: relative;
+    font-size: 1rem;
+    padding: 0;
+    font-weight: 700;
+}
+.Portfolio-page-ul li button::before{
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 0.125rem;
+    left: 0rem;
+    bottom: -0.4375rem;
+    transition: all 0.5s;
+    background-color: #1C1C1C;
+}
+.nav-pills .nav-link.active{
+    background-color: var(--color-5);
+    color: var(--color-4);  
+}
+.nav-pills .nav-link.active::before{
+    width: 95%;
+}
+.inner1-img{
+    position: relative;
+    /* overflow: hidden; */
+}
+.div-on-img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.inner1:hover .div-inside-div{
+    opacity: 1;
+    height: 96%;
+    top: 0;    
+}
+.div-inside-div{
+    width: 96%;
+    height: 96%;
+    top: 2%;
+    left: 0;
+    opacity: 0;
+    background-color: var(--color-5);
+    transition: all 0.4s;
+    position: relative;
+}
+.div-inside-div-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.div-inside-div-title h6{ 
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    opacity: 0;
+    font-size: 0.75rem; 
+    letter-spacing: 0.125rem;
+    font-weight: 700;
+    transition: all 0.4s;
+    transform: translatex(-50%);
+    font-family: 'Montserrat', sans-serif;
+}
+.inner1:hover .div-inside-div-title h6{
+    top: 40%;
+    opacity: 1;
+}
+.div-inside-div-icons{
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    opacity: 0;
+    transition: all 0.4s;
+    transform: translatex(-50%);
+}
+.inner1:hover .div-inside-div-icons{
+    bottom: 40%;
+    opacity: 1;
+}
+.icons1 a{
+    color: var(--color-5);
+}
+.icons1{ 
+    background-color: var(--color-4);
+    border: 0.0625rem solid var(--color-4);
+    width: 1.875rem;
+    height: 1.875rem;
+    font-size: 0.875rem;
+}
+.icons1:hover{
+    background-color: var(--color-5);
+}
+.icons1:hover a{
+    color: var(--color-4);
+}
+/*------------------ Portfolio-page-end ----------------*/
+
+/*------------------ Testimonials-page-start -----------*/
+#Testimonials-page{
+    background-color: var(--color-6);
+}
+.Testimonials-page-title h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+.Testimonials-page-title h3::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -0.4375rem;
+    width: 100%;
+    height: 1.25rem;
+    z-index: -1;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+.carousel-item img{
+   max-width: 6.25rem; 
+}
+.carousel-item p{
+    max-width: 53.75rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: var(--color-3);
+    font-family: 'Poppins', sans-serif;
+}
+.carousel-item h6{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-7);
+    font-family: 'Montserrat', sans-serif;
+}
+.carousel-item span{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-8);
+    font-family: 'Poppins', sans-serif;
+}
+.carousel-indicators [data-bs-target] {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    margin: 0rem 0.4375rem;
+    background-color: #d6d6d6;
+    background-clip: padding-box;
+}
+.carousel-indicators .active {
+    background-color: #869791;
+}
+.carousel-indicators button{
+    transition: all 0.5s;
+}
+.carousel-indicators button:hover{
+    background-color: #869791;
+}
+/*------------------ Testimonials-page-end -------------*/
+
+/*------------------ icons-page-start ------------------*/
+.icons-page{
+    background-color: var(--color-5);
+}
+.col1-content h3{
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+.col1-content p{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif; 
+}
+/*------------------ icons-page-end --------------------*/
+
+/*------------------ ourteam-page-start ----------------*/
+#ourteam-page{
+    background-color: var(--color-6);
+}
+.ourteam-page-title h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+.ourteam-page-title h3::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -0.4375rem;
+    width: 100%;
+    height: 1.25rem;
+    z-index: -1;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+.icons-main-div-icons{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.0625rem solid var(--color-4);
+    background-color: var(--color-4);
+}
+.icons-main-div-icons:hover{
+    background-color: var(--color-5);   
+}
+.icons-main-div-icons:hover a{
+    color: var(--color-4);
+}
+.icons-main-div-icons a{
+    color: var(--color-5);
+}
+.icons-main-div-icons i{
+    font-size: 1.25rem;
+}
+.layer-over-img{
+    width: 50%;
+    height: 50%;
+}
+.layer-over-img{
+    background-color: var(--color-5);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.inner3:hover .layer-over-img{
+    transform: rotateY(180deg);
+    opacity: 1;
+    width: 97%;
+    height: 97%;
+}
+.inner3:hover .icons-main-div{
+    transform: rotatey(180deg);
+}
+.inner3{
+    background-color: var(--color-9);
+    border-radius: 0.3125rem;
+}
+.inner3-content h4{
+    font-size: 1.5625rem;
+    font-weight: 500;
+    color: var(--color-5);
+    font-family: 'Montserrat', sans-serif;
+}
+.inner3-content h5{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-5);
+    font-family: 'Montserrat', sans-serif;
+}
+.inner3-img img{
+    transition: all 0.5s;
+}
+.inner3-img{
+    overflow: hidden;   
+}
+.inner3-img:hover img{
+    transform: scale(1.2,1.2);
+}
+/*------------------ ourteam-page-end ------------------*/
+
+/*------------------ ContactUs-page-start --------------*/
+.ContactUs-page-title h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+.ContactUs-page-title h3::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -0.4375rem;
+    width: 100%;
+    height: 1.25rem;
+    z-index: -1;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+.ContactUs-page-icons{
+    width: 4.0625rem;
+    height: 4.0625rem;
+    transition: all 0.5s;
+    background-color: var(--color-6);
+}
+.inner4:hover .ContactUs-page-icons{
+    background-color: var(--color-4);
+}
+.ContactUs-page-icons i{
+    font-size: 1.5625rem;
+    transition: all 0.5s;
+}
+.inner4:hover .ContactUs-page-icons i{
+    color: var(--color-5);
+}
+.col4-content h6{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.col4-content p{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.inner5 input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--color-7);
+    border: none;
+    padding: 0.8125rem 0rem;
+    padding-left: 0.625rem;
+    background-color: #F4F4F4;
+    border-radius: 0.3125rem;
+}
+input:focus{
+    outline: none !important;
+}
+.inner6 textarea{
+    border: none;
+    background-color: #F4F4F4;
+    border-radius: 0.3125rem;
+    min-height: 5.625rem;
+    padding-left: 0.625rem;
+    resize: vertical;
+}
+textarea:focus{
+    outline: none !important;
+}
+.btnbtn button{
+    padding: 0.625rem 3.125rem;
+    background-color: var(--color-4);
+    color: var(--color-5);
+    margin-top: 0.9375rem;
+    border-radius: 0.3125rem;
+    border: none;
+    border: 0.0625rem solid #1c1c1c;
+    font-size: 0.9375rem;
+    transition: all 0.5s;
+}
+.btnbtn button:hover{
+    background-color: var(--color-5);
+    color: var(--color-4);
+}
+/*------------------ ContactUs-page-end ----------------*/
+
+/*------------------  footer-start ---------------------*/
+.footer-page{
+    background-color: var(--color-4);
+}
+.footer-page p{
+    color: var(--color-3);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+/*------------------  footer-end -----------------------*/
